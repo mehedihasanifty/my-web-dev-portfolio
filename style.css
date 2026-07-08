@@ -1,0 +1,321 @@
+/* Reset style */
+*{
+    padding: 0px;
+    margin: 0px;
+     font-family: "Open Sans", sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+/* common style */
+.common-btn{
+    background-color: #fd6b0a;
+    padding: 9px 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color:aliceblue;
+    border: none;
+    cursor: pointer;
+
+}
+.outline-btn{
+    background-color: white;
+    padding: 9px 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color:#fd6b0a;
+    border: 1px solid #fd6b0a;
+    cursor: pointer;
+
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 12px 0px ;
+
+}
+.logo{
+    font-weight: bold;
+    font-size: 33px;
+    left: 226px;
+    top: 51px;
+    height: 54px;
+    box-shadow:none;
+    mix-blend-mode: normal;
+}
+.logo-e{
+    color: #fd6b0a;
+ 
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+}
+ul li a{
+    text-decoration: none;
+}
+
+/* Hero section */
+.hero-parent-back{
+        background-color: #fff8f3;
+
+}
+.hero-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.hero-left-p-1{
+    font-size: 28px;
+    font-weight: 600;
+}
+.hero-left h2{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+.haero-left-btn-parent{
+    margin-top: 12px;
+}
+
+/* About us css */
+.about-parent{
+        background-color: #fff8f3;
+        margin: 70px auto;
+        border-radius: 10px;
+        padding: 80px;
+        text-align: center;
+}
+.about-parent p{
+    margin: 10px 0px;
+}
+.about-box-parent{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+
+}
+.about-box-parent .box{
+        background-color: #f8eae0;
+        padding: 5px;
+        border-radius: 5px;
+
+}
+
+/* what I do section css */
+
+.what-i-do-parent{
+    margin: 60px auto;
+    text-align: center;
+
+}
+.what-i-do-card-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.what-i-do-card-container .what-i-do-card{
+    border: 2px solid #f1ddd0;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: left;
+}
+.what-i-do-card-container .what-i-do-card h2{
+    margin: 10px 0px;
+
+}
+
+.what-i-do-card-container .what-i-do-card p{
+    color: #757575;
+    font-size: 15px
+
+}
+
+/* a-summary-of-resume
+.a-summary-of-resume{
+     margin: 60px auto;
+    text-align: center;
+}
+.a-summary-of-resume-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.what-i-do-card-container .what-i-do-card{
+    border: 2px solid #f1ddd0;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: left;
+}
+.what-i-do-card-container .what-i-do-card h2{
+    margin: 10px 0px;
+
+}
+
+.what-i-do-card-container .what-i-do-card p{
+    color: #757575;
+    font-size: 15px
+
+} */
+
+/* Amazing works secrion style */
+.my-amazing-parent{
+    text-align: center;
+
+}
+.gallery{
+    margin-top:  20px;;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-auto-rows: 250px;
+    grid-template-areas: 
+    "one two three" 
+    "four two six"  
+    "four five six";
+}
+.gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box-1{
+    grid-area: one;
+}
+.box-2{
+        grid-area: two;
+
+
+}
+.box-3{
+        grid-area: three;
+
+
+}
+.box-4{
+        grid-area: four;
+
+
+}
+.box-5{
+        grid-area: five;
+
+
+}
+.box-6{
+        grid-area: six;
+
+
+}
+
+/* Footer */
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+
+    margin-top: 80px;
+    padding: 60px;
+
+    background: #FFF8F3;
+    border-radius: 15px;
+
+    align-items: center;
+}
+
+footer h2{
+    font-size: 32px;
+    color: #181818;
+    margin-bottom: 20px;
+}
+
+footer form{
+    padding: 0;
+}
+
+.footer-left{
+    text-align: left;
+}
+
+.footer-left p{
+    margin: 15px 0 30px;
+    color: #555;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+footer form input,
+footer form textarea{
+    display: block;
+    width: 100%;
+
+    margin-bottom: 18px;
+    padding: 15px 18px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    background: #fff;
+    font-size: 16px;
+
+    outline: none;
+    transition: all .3s ease;
+}
+
+footer form input:focus,
+footer form textarea:focus{
+    border-color: #FD6E0A;
+    box-shadow: 0 0 10px rgba(253, 110, 10, .2);
+}
+
+footer form textarea{
+    resize: none;
+}
+
+.footer-icon-parent{
+    display: flex;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.footer-icon-parent span{
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fff;
+    color: #FD6E0A;
+
+    border-radius: 50%;
+    font-size: 20px;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    transition: all .3s ease;
+}
+
+.footer-icon-parent span:hover{
+    background: #FD6E0A;
+    color: #fff;
+    transform: translateY(-5px);
+}
